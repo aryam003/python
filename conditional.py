@@ -33,9 +33,23 @@
 # else:
 #     print("these person is not eligible for vote")
 
-a=int(input("enter a number:" ))
-b=int(input("enter a number:" ))
-if a>=b:
-    print(a,"is the bigger no.")
+# a=int(input("enter a number:" ))
+# b=int(input("enter a number:" ))
+# if a>=b:
+#     print(a,"is the bigger no.")
+# else:
+#     print(b,"is the bigger no.")    
+
+# a=int(input("enter salary:" ))
+# b=int(input("enter years of service:" ))
+# if b>=5:
+#     bounes=0.05*a+a
+#     print(f"your net bounes amount: {bounes:.5}")
+# else:
+#     print("you are not eligible ")
+
+e=int(input("enter a number :"))
+if e%3==0:
+    print(e,"is divisible")
 else:
-    print(b,"is the bigger no.")    
+    print(e,"is not divisible")
