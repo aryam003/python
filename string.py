@@ -70,10 +70,14 @@
 # c="12345"
 # print(c.isdigit())
 
-print("{:<15}{:<5}{:<5}".format("name","age","mark"))
-print("{:<15}{:<5}{:<5}".format("A","22","100"))
-print("{:<15}{:<5}{:<5}".format("B","32","99"))
+# print("{:<15}{:<5}{:<5}".format("name","age","mark"))
+# print("{:<15}{:<5}{:<5}".format("A","22","100"))
+# print("{:<15}{:<5}{:<5}".format("B","32","99"))
 
 # item=input("enter an item")
 # print=int(input("enter price"))
 # print(f"its an {item},its price {price} rs")
+
+
+
+
