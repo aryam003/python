@@ -138,16 +138,17 @@ else:
 #     fee=(units-200)*10+500
 #     print(f"electricity bill:{fee}")
 
-a=int(input("enter a no:"))
-b=int(input("enter a no:"))
-c=int(input("enter a no:"))
-if a>b:
-    if a>c:
-        print(a)
-    else:
-        print(c)
-else:
-    if b>c:
-        print(b) 
-    else:
-        print(c)
+# a=int(input("enter a no:"))
+# b=int(input("enter a no:"))
+# c=int(input("enter a no:"))
+# if a>b:
+#     if a>c:
+#         print(a)
+#     else:
+#         print(c)
+# else:
+#     if b>c:
+#         print(b) 
+#     else:
+#         print(c)
+
