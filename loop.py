@@ -22,12 +22,12 @@
 #     i+=1
 # print('sum :',sum)    
 
-# i=int(input("enter starting number:"))
-# e=int(input("enter ending number:"))
-# while i<=e:
-#     if i%2==0:
-#         print(i)
-#     i+=1
+i=int(input("enter starting number:"))
+e=int(input("enter ending number:"))
+while i<=e:
+    if i%2==0:
+        print(i)
+    i+=1
     
 # i=int(input("enter starting number:"))
 # e=int(input("enter ending number:"))
