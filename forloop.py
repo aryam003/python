@@ -113,10 +113,70 @@
 #    0 1 2
 #    2 1 0'''    
 
-'''0 1  4
-   0 1  4
-   9 16 25
-   9 16 25'''
+# '''0 1  4
+#    0 1  4
+#    9 16 25
+#    9 16 25'''
 
-for i in range(4):
-    
+# for i in range(4):
+#     if i<=0:
+#         a=
+#         for j in range(3):
+#             print(j,end="\t")
+
+
+
+
+
+
+# a=1
+# for i in range(1,5):
+#     for j in range(i):
+#         print(a,end="\t")
+#         a+=1
+#     print()   
+
+'''1
+   2 3
+   4 5 6
+   7 8 9 10 (2)'''
+
+
+# a=1
+# for i in range(3):
+#     for j in range(3):
+#         print(a,end="\t")
+#         a+=2
+#     print()  
+'''1  3  5
+   7  9  11
+   13 15 17 (4)'''     
+
+for i in range(3):
+    for j in range(3):
+        print(i,end="\t")
+    print()    
+'''A B C        
+   A B C
+   A B C (1)'''
+
+# for i in range(1,5):
+#     for j in range(i,0,-1):
+#         print(j,end="\t")
+#     print()    
+'''1
+   2 1
+   3 2 1
+   4 3 2 1 (3)'''
+
+# for i in range(3):
+#     for j in range(3):
+#         if i==j:
+#             print('5',end="\t")
+#         else:
+#             print('#',end="\t")
+#     print()            
+'''5 # #
+   # 5 #
+   # # 5 (5)'''                    
+                                             
