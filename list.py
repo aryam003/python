@@ -99,10 +99,69 @@ l1= [1, 2, 3, 4]'''
 # print("odd:",odd)         
 # print("even:",even) 
 
-l=[1,5,8,10,11]
-sum=0
-for i in l:
-    sum+=i
-print("sum:",sum)    
+# l=[1,5,8,10,11]
+# sum=0
+# for i in l:
+#     if i%2==0:
+#        sum+=i
+#        print(i)
+# print("sum:",sum)    
 
-           
+# l=['welcome','python','hello']
+# for i in l:
+#     print(i[::-1])          
+'''emoclew
+   nohtyp
+   olleh'''
+# l=[1,3,2.5,'ab',6]
+# sum=0
+# for i in l:
+#     if type(i)==int or type(i)==float:
+#       sum+=i
+# print("sum:",sum)
+'''sum: 12.5'''    
+# l=[2,3,4,2,5,3,1,6,1]
+# l1=[]
+# for i in l:
+#     if i not in l1:
+#         l1.append(i)
+# print(l1)
+'''[2, 3, 4, 5, 1, 6]''' 
+# names=[]
+# limit=int(input("enter limit:"))
+# for i in range(limit):
+#     name=(input("enter name:"))
+#     names.append(name)
+# print(names)
+'''enter limit:2
+   enter name:a
+   enter name:s
+   ['a', 's']'''  
+# std=[]
+# limit=int(input("enter limit :"))
+# for i in range(limit):
+#     name=(input("enter a name:"))
+#     age=int(input("enter age:"))
+#     mark=int(input("enter mark:"))
+#     std.append([name,age,mark])
+# print(std) 
+'''[['Anu', 20, 90], ['Ammu', 15, 100]]'''
+std=[]
+while True:
+    print('''
+1.Add std
+2.View std
+3.Update std
+4.Delet std                           
+''')
+    choice=int(input("enter ur choice"))
+    if choice==1:
+         name=(input("enter a name:"))
+         age=int(input("enter age:"))
+         mark=int(input("enter mark:"))
+         std.append([name,age,mark])
+    elif choice==2:
+         print('{:<10}{:<5}{:<5}'.format('name','age','mark'))
+         print('_'*20)
+    for i in std:
+         print('{:<10}{:<5}{:<5}'.format(i[0],i[1],i[2]))     
