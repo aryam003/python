@@ -160,8 +160,9 @@
 number={}
 n=int(input("enter a number:"))
 for i in range(n+1):
-    # print(i)
-    number[i]=i*i
-# print(number)
-if n%2==0:
-    print()
+    if i%2==0:
+        number[i]=i*i
+    else:
+        number[i]=i*i*i
+print(number)
+'''{0: 0, 1: 1, 2: 4, 3: 27, 4: 16, 5: 125, 6: 36, 7: 343, 8: 64, 9: 729, 10: 100}'''
