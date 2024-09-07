@@ -155,12 +155,29 @@
 # print(number)
 '''{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}'''
 
-number={}
-n=int(input("enter a number:"))
-for i in range(n+1):
-    if i%2==0:
-        number[i]=i*i
-    else:
-        number[i]=i*i*i
-print(number)
-'''{0: 0, 1: 1, 2: 4, 3: 27, 4: 16, 5: 125, 6: 36, 7: 343, 8: 64, 9: 729, 10: 100}'''                 
+# number={}
+# n=int(input("enter a number:"))
+# for i in range(n+1):
+#     if i%2==0:
+#         number[i]=i*i
+#     else:
+#         number[i]=i*i*i
+# print(number)
+'''{0: 0, 1: 1, 2: 4, 3: 27, 4: 16, 5: 125, 6: 36, 7: 343, 8: 64, 9: 729, 10: 100}'''
+
+# n=int(input("Enter a number:"))
+# num={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'sevan',8:'eight',9:'nine'}
+# s=''
+# while n>0:
+#     d=n%10
+#     s=num[d]+' '+s
+#     n//=10
+# print(s) 
+'''Enter a number:123
+   one two three '''       
+
+l=[{'name':'anu','age':20,'lang':['eng','mal']}]
+l[0]['lang'].append('hindi')
+print(l)
+'''[{'name': 'anu', 'age': 20, 'lang': ['eng', 'mal', 'hindi']}]'''
+# print(l[0]['lang'])
