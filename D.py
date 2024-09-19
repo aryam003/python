@@ -75,7 +75,7 @@
 #         age=int(input("enter age:"))
 #         mark=int(input("enter mark:"))
 #         std.append({'name':name,'age':age,'mark':mark})
-#     elif choice==2:
+#     elif choice== 2:
 #         print('{:<10}{:<5}{:<5}'.format('name','age','mark'))    
 #         print('_'*20)
 #         for i in std:
