@@ -11,7 +11,7 @@ while True:
 3.Update products
 4.Remove products
 5.Register uses
-6.Cart(purchas/sale)
+6.costomer
 7.Search
 8.Exit
 ''')
@@ -121,7 +121,7 @@ while True:
                 print('{:<10}{:<10}{:<30}{:<10}{:<10}{:<10}'.format('id','name','address','email','phone','data')) 
                 print('_'*80)
                 for i in user:
-                        print('{:<10}{:<10}{:<30}{:<10}{:<10}{:<10}'.format(i['id'],i['name'],i['address'],i['email'],i['phone'],i['data'])) 
+                        print('{:<10}{:<10}{:<30}{:<10}{:<10}{:<10}'.format(i['id'],i['name'],i['address'],i['email'],i['phone'],i['date'])) 
 
             elif sub_ch==3:
                 print("Exiting.")
@@ -132,19 +132,17 @@ while True:
     elif choice==6:
         while True:
             print('''
-1.cart
-2.ordered
-3.deliverd
-4.status
-5.exit
+1.ordered
+2.view
+3.exit
 ''')
             sub_ch = int(input("Enter your choice: "))
             if sub_ch == 1:
-                product_id = int(input("Enter product ID to add to cart: "))
+                product_id = int(input("Enter product ID: "))
                 for i in product:
                     if i['id'] == product_id:
                         cart.append(i)
-                        print(f"Added {i['name']} to cart.")
+                        print(f"Added {i['name']} to order.")
                         break
                 else:
                     print("Product not found.")
@@ -155,15 +153,8 @@ while True:
                 print('_' * 60)
                 for i in cart:
                     print('{:<10}{:<10}{:<10}{:<10}{:<10}'.format(i['id'], i['name'], i['price'], i['B_name'], i['N_weight']))
-
             elif sub_ch == 3:
-                print("Delivery.")
-
-            elif sub_ch == 4:
-                print("Status.")
-
-            elif sub_ch == 5:
-                print("Exiting cart management.")
+                print("Exiting.")
                 break
 
             else:

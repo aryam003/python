@@ -44,7 +44,7 @@ def view_user():
     for i in user:
         print('{:<10}{:<10}{:<10}{:<10}{:<10}'.format(i['id'],i['name'],i['address'],i['phone'],i['email']))                       
 def login():
-    u_name=input("Enter name:")
+    u_name=input("Enter email:")
     p_word=input("Enter password:")
     f=0
     u=''
@@ -92,7 +92,17 @@ def borrow_book(user):
                 print("outof stock.")
     if f==0:
         print('invalid id')
- 
+def return_book(user):
+    id=int(input("Enter id:"))
+    f=0
+    for i in book:
+        if i['id']==id and id in user['books']:
+            f=1
+            i['stock']+=1
+            user['books'].remove(id)
+            print('book returned')
+    if f==0:
+        print("book not found.") 
 while True:
     print('''
 1.Register
@@ -144,7 +154,10 @@ while True:
                     view()    
                 elif sub_ch==3:
                     borrow_book(u)
-                # elif sub_ch==4:
+                elif sub_ch==4:
+                    return_book(u)
+                elif sub_ch==6:
+                    break
                     
         else:
             print('Invalid username or password.')
