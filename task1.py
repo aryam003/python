@@ -2,7 +2,7 @@ import datetime
 print(datetime.datetime.now().strftime("%x"))
 user=[]
 product=[]
-cart=[]
+order=[]
 
 while True:
     print('''
@@ -141,7 +141,7 @@ while True:
                 product_id = int(input("Enter product ID: "))
                 for i in product:
                     if i['id'] == product_id:
-                        cart.append(i)
+                        order.append(i)
                         print(f"Added {i['name']} to order.")
                         break
                 else:
@@ -151,7 +151,7 @@ while True:
                 print("Ordered products:")
                 print('{:<10}{:<10}{:<10}{:<10}{:<10}'.format('id', 'name', 'price', 'B_name', 'N_weight'))
                 print('_' * 60)
-                for i in cart:
+                for i in order:
                     print('{:<10}{:<10}{:<10}{:<10}{:<10}'.format(i['id'], i['name'], i['price'], i['B_name'], i['N_weight']))
             elif sub_ch == 3:
                 print("Exiting.")

@@ -103,6 +103,8 @@ def return_book(user):
             print('book returned')
     if f==0:
         print("book not found.") 
+def book_in_hand(u):
+    print(u['books'])
 while True:
     print('''
 1.Register
@@ -156,6 +158,8 @@ while True:
                     borrow_book(u)
                 elif sub_ch==4:
                     return_book(u)
+                elif sub_ch==5:
+                    book_in_hand(u)
                 elif sub_ch==6:
                     break
                     
