@@ -13,7 +13,12 @@ while True:
 5.Modulus
 6.Exit
 ''')
-    choice=int(input("enter ur choice:"))
+    while True:
+        try:
+            choice=int(input("enter ur choice:"))
+            break
+        except:
+            pass
     if choice==1:
         a,b=number.num()
         d.add(a,b)

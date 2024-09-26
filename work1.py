@@ -208,25 +208,99 @@ WELCOME
 '''14
 cap 3
 small 11'''
-f=open('./arya/python/demo.txt','r')
-l=f.readlines()
-f.seek(0)
-letter=0
-cap=0
-w=0
-for i in range(len(l)):
-    a=f.readline().strip()
-    s=a.split(' ')
-    for i in s:
-        if i!='':
-            w+=1
-    for i in a:
-         if i !=' ':
-            if i.isupper():
-                cap+=1
-            letter+=1
-print(letter)
-print('cap:',cap)
-print('small:',letter-cap)
-print('word:',w)
-print('no of lines:',len(l))
+# f=open('./arya/python/demo.txt','r')
+# l=f.readlines()
+# f.seek(0)
+# letter=0
+# cap=0
+# w=0
+# for i in range(len(l)):
+#     a=f.readline().strip()
+#     s=a.split(' ')
+#     for i in s:
+#         if i!='':
+#             w+=1
+#     for i in a:
+#          if i !=' ':
+#             if i.isupper():
+#                 cap+=1
+#             letter+=1
+# print(letter)
+# print('cap:',cap)
+# print('small:',letter-cap)
+# print('word:',w)
+# print('no of lines:',len(l))
+
+# f=open('python/demo.txt','a')
+# f.write('\nappend')
+# f.write('\nappend')
+'''hello
+   append'''
+
+# import os
+# os.remove('python/demo1.txt')
+'''remove'''
+# if os.path.exists('python/demo.txt'):
+#     print('file found')
+# else:
+#     print('not')
+'''finding a file (file found)'''
+# os.mkdir('python/sample')   #create:make dir
+# os.rmdir('python/sample')   #remove:remove dir
+
+# print('welcome')
+# a='welcome'
+# b=20
+# try:                #using for error handiling
+#     print(a+b)
+# except:             #if ('try') is error print'error'/if not error print=''
+#     print('error')  #error (if b='20' print=welcome20)
+    
+# else:             
+#     print('else')
+# finally:            #work in any
+#     print('finally')
+# print('sample print')
+'''welcome
+   error
+   finally
+   sample print'''
+
+# while True:
+#     print('''
+# 1.Add
+# 2.Subtraction
+# ''')
+#     while True:
+#         try:
+#             choice=int(input("enter ur choice:"))
+#             break
+#         except:
+#             print('error,enter new data')
+#     if choice==1:
+#         print('A')
+#     elif choice==2:
+#         print('B')
+'''1.Add
+   2.Subtraction
+
+   enter ur choice:s
+   error,enter new data
+   enter ur choice:1
+   A'''        
+
+# l=[1,2,3,4,5,'abc']
+# sum=0
+# for i in l:
+#     try:
+#         sum+=i
+#     except:
+#         pass
+# print('sum:',sum) 
+'''sum:15'''  
+l=[1,2,3,4,5,'abc']
+sum=0
+for i in l:
+        if type(i)==int or type(i)==float:
+           sum+=i
+print('sum:',sum)  
