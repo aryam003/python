@@ -45,10 +45,195 @@
 # obj=demo(500)
 # obj1=demo(200)       
 
-class demo:
-    def fun(name,age):
-       print('name=',name)
-       print('age=',age)
+# class demo:
+#     def fun(name,age):
+#        print('name=',name)
+#        print('age=',age)
+#---------------------------------------------
 
-s=demo
-s.fun(name='A',age=20)
+'''single inheritance'''
+
+# s=demo
+# s.fun(name='A',age=20)
+
+# class parent:
+#     def shop(self):
+#         print('shop')
+#     def car(self):
+#         print('car')
+
+# class child(parent):
+#     def bike(self):
+#         print('bike')
+
+# anu=child()
+# anu.bike()
+# anu.shop()
+'''bike
+   shop'''
+
+# class syn:
+#     def python(self):
+#         print('python')
+#     def php(self):
+#         print('php')
+# class novavi(syn):
+#     def dm(self):
+#         print('dm_work')
+#     def web(self):
+#         print('web_dev')
+
+# anu=novavi()
+# anu.web()
+# anu.python()  #can use methods of syn and novavi
+
+# std=syn()
+# std.php()    #only can use syn methods
+''' #anu
+        web_dev
+        python
+    #std
+        php'''
+
+#-----------------------------------------------------
+
+'''Multiple inheritance'''
+
+# class mom:
+#     def shop(self):
+#         print('shop')
+#     def car(self):
+#         print('car')
+# class dad:
+#     def dress_shop(self):
+#         print('derss shop')
+# class child(mom,dad):
+#     def bike(self):
+#         print('bike')
+
+# anu=child()
+# anu.dress_shop()
+# anu.car()
+# anu.bike()
+'''dress_shop
+   car
+   bike'''
+# class school:
+#     def class_room(self):
+#         print('class_room')
+#     def ground(self):
+#         print('ground')
+# class tuition:
+#     def notes(self):
+#         print('note')
+#     def work(self):
+#         print('work')    
+# class std(school,tuition):
+#     def uniform(self):
+#         print('uniform')
+
+# A=std()
+# A.class_room()
+# A.notes()
+# A.uniform()
+'''#school
+        class_room
+   #tuition     
+        note
+   #std
+        uniform'''
+#-------------------------------------------------
+
+'''Multilevel inheritance'''
+
+# class knr_un:
+#     def exam_notice(self):
+#         print('exam notice')
+#     def result(self):
+#         print('result')
+# class clg(knr_un):
+#     def notes(self):
+#         print('notes')
+#     def cls_rooms(self):
+#         print('class room')
+# class std(clg):
+#     def uniform(self):
+#         print('uniform')
+
+# A=std()         
+# A.exam_notice()
+# A.notes()
+# A.uniform()        
+
+# B=clg()
+# B.result()
+# B.cls_rooms()
+''' exam notice
+    notes
+    uniform
+    result
+    class room'''
+
+# class g_father:
+#     def shop(self):
+#         print('shop')
+#     def car(self):
+#         print('car')
+# class father(g_father):
+#     def dress_shop(self):
+#         print('derss shop')
+# class child(father):
+#     def bike(self):
+#         print('bike')
+# anu=child()
+# anu.shop()
+# anu.dress_shop()
+# anu.bike()  
+'''shop
+   dress shop
+   bike'''   
+#-----------------------------------------------------
+
+'''Higherarcial inheritance''' 
+
+# class father:
+#     def shop(self):
+#         print('shop')
+#     def car(self):
+#         print('car')
+# class child_1(father):
+#     def bike(self):
+#         print('bike')
+# class child_2(father):
+#     def dress_shop(self):
+#         print('dress shop')
+
+# anu=child_1()
+# anu.bike()   #car,shop
+# manu=child_2()
+# manu.car()     #dress shop,shop
+
+# class school:
+#     def exam_notice(self):
+#         print('exam notice')
+#     def result(self):
+#         print('result')
+# class class_1(school):
+#     def notes(self):
+#         print('notes')
+#     def cls_rooms(self):
+#         print('class room')
+# class class_2(school):
+#     def notes(self):
+#         print('notes')
+#     def cls_rooms(self):
+#         print('class room')
+
+# c=class_1()
+# c.cls_rooms()  #notes,exam notice,result
+# s=class_2()
+# s.result()     # ''
+'''class room
+result'''
+
+#-----------------------------------------------------------------
