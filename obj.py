@@ -49,9 +49,17 @@
 #     def fun(name,age):
 #        print('name=',name)
 #        print('age=',age)
+
+
+'''type of inheritance'''
+
+#---------------------------------------------
+#to connect one or more class
 #---------------------------------------------
 
 '''single inheritance'''
+
+#A-->B
 
 # s=demo
 # s.fun(name='A',age=20)
@@ -95,9 +103,11 @@
     #std
         php'''
 
-#-----------------------------------------------------
+#------------------------------------------------------------------
 
 '''Multiple inheritance'''
+
+#A---->C<-----B
 
 # class mom:
 #     def shop(self):
@@ -142,9 +152,10 @@
         note
    #std
         uniform'''
-#-------------------------------------------------
+#-----------------------------------------------------------
 
 '''Multilevel inheritance'''
+#
 
 # class knr_un:
 #     def exam_notice(self):
@@ -237,3 +248,106 @@
 result'''
 
 #-----------------------------------------------------------------
+
+'''hybrid inheritance'''
+
+# class syn:
+#     def python(self):
+#         print('python')
+#     def php(self):
+#         print('php')
+#     def admission(self):
+#         print('admission')
+# class teach_staff(syn):
+#     def notes(self):
+#         print('notes')
+#     def attentence(self):
+#         print('attentance')
+# class staff(syn):
+#     def account(self):
+#         print('accounts')
+#     def report(self):
+#         print('repote') 
+# class std(teach_staff):
+#     def lab(self):
+#         print('lab')
+#     def task(self):
+#         print('task')     
+# anu=std()
+# anu.admission()
+# anu.notes()
+# anu.lab() 
+'''admission
+   notes
+   lab'''
+
+
+# class library:
+#     def books(self):
+#         print('books')
+#     def register(self):
+#         print('register')    
+
+
+# class owner(library):
+#     def b_cost(self):
+#         print('book cost')
+#     def s_salary(self):
+#         print('staff salary')
+
+# class user(library):
+#     def b_name(self):
+#         print('book name')
+#     def d_return(self):
+#         print('date of return')
+
+# class staff(owner):
+#     def B_record(self):
+#         print('book recodes')
+#     def B_name(self):
+#         print('book name')
+#     def w_time(self):
+#         print('working time')   
+
+
+# staff1=staff()
+# staff1.register()
+# staff1.b_cost()
+# staff1.w_time() 
+# staff1.books()
+# staff1.B_record()
+# staff1.s_salary()
+''' register
+    book cost
+    working time
+    books
+    book recodes
+    staff salary
+'''
+# print('-'*20)
+# user1=user()
+# user1.register()
+# user1.b_name()
+# user1.books()
+# user1.d_return()
+'''register
+   book name
+   books
+   date of return'''
+            
+#------------------------------------------------------------
+'''method over loading
+   method over riding(only supports python)'''
+#-------------------------------------------------------------
+
+'''method over riding'''
+
+class bank():
+    def __init__(self):
+        print('Bank dtle')
+class user():
+    def __init__(self):
+        print('User dtle')
+
+A=user()
+B=bank()
