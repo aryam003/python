@@ -342,12 +342,79 @@ result'''
 
 '''method over riding'''
 
-class bank():
-    def __init__(self):
-        print('Bank dtle')
-class user():
-    def __init__(self):
-        print('User dtle')
+# class bank():
+#     def __init__(self):
+#         print('Bank dtle')
+# class user(bank):
+#     def __init__(self):
+#         print('User dtle')
 
-A=user()
-B=bank()
+# A=user()
+
+# B=bank()
+
+#----------------------------------------------------------------
+
+# class school:
+#     def note(self):
+#         print('notes in school.')
+# class std(school):
+#     def note(self):
+#         print('notes in std.')
+#         super().note()
+# anu=std()
+# anu.note()        
+'''notes in school #super()
+notes in std '''   #(note()) 
+#------------------------------------------------------
+# class school:
+#     def note(self,sub):
+#         print('notes in school',sub)
+# class std(school):
+#     def note(self):
+#         print('notes in std.')
+#         super().note('py')
+
+# anu=std()
+# anu.note() 
+#-----------------------------------------------------------
+# class school:
+#     def note(self,sub):
+#         print('notes in school.',sub)
+# class std(school):
+#     def note(self,sub):
+#         print('notes in std.')
+#         super().note(sub)
+# anu=std()
+# anu.note('py') 
+#-------------------------------------------------------------
+
+'''abstraction'''
+
+from abc import ABC,abstractmethod
+class syn(ABC):
+    @abstractmethod
+    def reg(self):
+        pass
+    def python(self):
+        print('python')
+    def php(self):
+        print('php')
+class staff(syn):
+    def reg(self):
+        print('staff reg')
+    def note(self):
+        print('notes')
+class std(syn):
+    def reg(self):
+        print('std reg')
+    def exam(self):
+        print('exam')
+
+staff1=staff()
+staff1.reg()
+'''staff reg'''
+a=std()
+a.reg()
+'''std reg'''
+
