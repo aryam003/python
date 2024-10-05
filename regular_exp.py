@@ -1,6 +1,6 @@
                                             #regular expression(re)
 import re                                         
-a='abcd'
+# a='abcd'
 # print(re.search('a',a))
 '''<re.Match object; span=(0, 1), match='a'>'''
 # print(re.search('ab',a))
@@ -57,16 +57,16 @@ a='abcd'
 '''<re.Match object; span=(0, 1), match='a'>'''
 # print(re.search('[b-z]',a))
 '''<re.Match object; span=(1, 2), match='b'>'''
-b='ABCD'
+# b='ABCD'
 # print(re.search('[A-Z]',b))
 '''<re.Match object; span=(0, 1), match='A'>'''
-c='ABCabc'
+# c='ABCabc'
 # print(re.search('[a-z]',c))
 '''<re.Match object; span=(3, 4), match='a'>'''
-d='1234'
+# d='1234'
 # print(re.search('[0-9]',d))
 '''<re.Match object; span=(0, 1), match='1'>'''
-e='abc123'
+# e='abc123'
 # print(re.search('[a-z][0-9]',e))
 '''< match='c1'>'''
 # print(re.search('[a-z0-9]',d))
@@ -95,8 +95,22 @@ e='abc123'
 # if len(s)==10 and re.search('[6-9].{9}',s) and s.isdigit():
 #     print('valid')
 # else:
-#     print('not valid') 
-'''not valid'''
+#     print('invalid') 
+'''invalid'''
 
-m='anu@gmail.com'
-print(re.search('^[a-z].*@gmail.com$',m))
+'''email validation'''
+# m='anu@gmail.com'
+
+# print(re.search('^[a-z].*@gmail.com$',m))
+
+# if re.search('^[a-z].*@gmail.com$',m):
+#     print('valid')
+# else:
+#     print('invalid') 
+
+'''password validation'''
+p=input("enter a password:")
+if len(p)>=8 and re.search('[^A-z0-9].*[!@#$%&0-9]',p) and not(p.isdigit()):
+    print('valid')
+else:
+    print('invalid')
