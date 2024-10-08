@@ -80,6 +80,60 @@ except:
 # con.execute("delete from std where roll_no=3")
 # con.commit()
 
-delete=int(input("enter roll no:"))
-con.execute("delete from std where roll_no=?",(delete,))
-con.commit()
+# delete=int(input("enter roll no:"))
+# con.execute("delete from std where roll_no=?",(delete,))
+# con.commit()
+
+#------------------------------------------------------------------------------------
+
+
+# data=con.execute("select * from std where name like 'a%'")      #1st L =a
+# for i in data:
+#     print(i)
+
+# data=con.execute("select * from std where name like '%e'")      #last L=e
+# for i in data:
+#     print(i)
+
+# data=con.execute("select * from std where name like '_n%'")      #2nd L=n
+# for i in data:
+#     print(i)
+
+# data=con.execute("select * from std where name like '__e%'")       #3rd L=e
+# for i in data:
+#     print(i)
+
+# data=con.execute("select * from std order by name")
+# for i in data:
+#     print(i)
+
+# data=con.execute("select * from std order by name desc")
+# for i in data:
+#     print(i)
+
+# data=con.execute("select * from std order by mark desc")
+# for i in data:
+#     print(i)
+
+#-------------------------------------------------------------------
+
+
+# data=con.execute("select name,min(mark) from std group by name")       #min
+# for i in data:
+#     print(i)
+
+# data=con.execute("select name,max(mark) from std group by name")       #max
+# for i in data:
+#     print(i)
+
+# data=con.execute("select name,count(mark) from std group by name")     #count
+# for i in data:
+#     print(i)
+
+# data=con.execute("select name,avg(mark) from std group by name")       #avg
+# for i in data:
+#     print(i)
+
+data=con.execute("select name,sum(mark) from std group by name")         #sum
+for i in data:
+    print(i)

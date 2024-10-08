@@ -34,7 +34,7 @@ while True:
         con.execute("delete from Emp where id=?",(delete,))
         con.commit()
     elif choice==4:
-        update_id = int(input("Enter ID of the employee to update: "))
+        update_id=int(input("Enter ID of the employee to update: "))
         while True:
             print('''
 1.age
@@ -44,33 +44,33 @@ while True:
 5.exit
 ''')
             ch_sub=int(input('enter ur choice to update:'))
-            if ch_sub == 1:  # Update Age
-                new_age = int(input("Enter new age: "))
+            if ch_sub==1: 
+                new_age=int(input("Enter new age: "))
                 con.execute("update Emp set age=? where id=?", (new_age, update_id))
                 con.commit()
                 
-            elif ch_sub == 2: 
-                new_salary = int(input("Enter new salary: "))
+            elif ch_sub==2: 
+                new_salary=int(input("Enter new salary: "))
                 con.execute("update Emp set age=? where id=?", (new_salary, update_id))
                 con.commit()
                 
-            elif ch_sub == 3: 
-                new_position = input("Enter new position: ")
+            elif ch_sub==3: 
+                new_position=input("Enter new position: ")
                 con.execute("update Emp set age=? where id=?", (new_position, update_id))
                 con.commit()
                 
-            elif ch_sub == 4:
-                new_experience = int(input("Enter new experience: "))
+            elif ch_sub==4:
+                new_experience=int(input("Enter new experience: "))
                 con.execute("update Emp set age=? where id=?", (new_experience, update_id))
                 con.commit()
                 
-            elif ch_sub == 5:
+            elif ch_sub==5:
                 print("Exiting update menu.")
                 break
             else:
                 print("Invalid choice. Please try again.")
 
-    elif choice==5:  # Search Employee
+    elif choice==5:
         search_id=int(input("Enter ID of the employee to search: "))
         data=con.execute("select * from Emp where id=?", (search_id,))
         for i in data:
