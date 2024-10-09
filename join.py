@@ -38,7 +38,7 @@ except:
     (None, None, None, 'java', 65)
     (1, 'A', 20, 'php', 72)'''
 
-# data=con.execute("select std.No,std.name,std.age,mark.sub,mark.mark from std cross join mark")
+# data=con.execute("select std.No,std.name,std.age,mark.sub,mark.mark from std cross join mark")                   #cross join
 # for i in data:
 #     print(i)
 '''(1, 'A', 20, 'py', 70)
@@ -55,3 +55,4 @@ except:
 (3, 'C', 22, 'php', 60)
 (3, 'C', 22, 'java', 65)
 (3, 'C', 22, 'php', 72)'''
+
